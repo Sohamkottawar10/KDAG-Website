@@ -1,4 +1,4 @@
-const members = [
+const members = [                                  //members is an array which contains info.
     {
         image: "https://drive.google.com/uc?id=12d3HMlbjhRpGgGJiiOUNJEJDNxbfdhh8",
         name: "Aalok Agrawal",

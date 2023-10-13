@@ -16,6 +16,10 @@
   .member-card-SM:hover {
     transform: scale(1.05);
     box-shadow: 2px 2px 8px 2px #777;
+    animation: cubic-bezier(0.55, 0.8, 0.2, 0.3);
+    box-shadow: 0 0 5px rgb(227, 75, 75), 
+    0 0 25px rgb(227, 75, 75), 0 0 50px rgb(227, 75, 75), 
+    0 0 100px rgb(227, 75, 75), 0 0 200px rgb(227, 75, 75);
   }
   
   .member-profile-image-SM {
@@ -74,7 +78,7 @@
   }
   
   .member-social-icon-icon-SM:hover {
-    color: #F53D3D;
+    color: whitesmoke;
   }
   
   

@@ -1,8 +1,11 @@
 import React from "react";
+// import React, {useState, UseEffect} from "react";
 import Flex from "react-reveal/Fade";
 import "./TeamCard.css";
 
 const TeamCard = ({member}) => {
+  
+    
     return (
       <div class="member-card-wrapper">
       <Flex bottom>
@@ -13,9 +16,11 @@ const TeamCard = ({member}) => {
            <div class="member-name">
              <p>{member?.name || "Name of Member"}</p>
            </div>
-           {/* <div class="member-email">
-             <p>{member?.email || "email id"}</p>
+
+           {/* <div class="member-info">
+             <a href={member?.about || "About"} target=" _blank" rel="noreferrer noopener">About</a>
            </div> */}
+
           <div class="member-profile-follow">
              <div class="member-follow-text">
                <span>

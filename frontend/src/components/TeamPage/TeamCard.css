@@ -7,7 +7,7 @@
 .member-card {
   padding: 2rem;
   box-shadow: 2px 2px 5px 1px #777;
-  border-radius: 5px;   
+  border-radius: 40px;   
   transition: all .3s ease;
   width: 100%;
 }
@@ -15,6 +15,15 @@
 .member-card:hover {
   transform: scale(1.05);
   box-shadow: 2px 2px 8px 2px #777;
+  animation-fill-mode: both;
+    animation-duration: 1000ms;
+    animation-delay: 0ms;
+    animation-iteration-count: 1;
+    opacity: 1;
+    animation-name: react-reveal-315290839009309-3;
+    box-shadow: 0 0 5px rgb(243, 230, 230), 
+    0 0 25px rgb(243, 230, 230), 0 0 50px rgb(243, 230, 230), 
+    0 0 100px rgb(243, 230, 230), 0 0 200px rgb(243, 230, 230);
 }
 
 .member-profile-image {
@@ -62,7 +71,25 @@
 }
 
 .member-social-icon-icon:hover {
-  color: #F53D3D;
+  color: #f76c6c;
 }
 
+ /*TEAM CARD CSS.....................*/
+ .member-card:hover {
+  transform: scale(1.05);
+  /* box-shadow: 2px 2px 8px 2px #777; */
+
+  /* background-color: #f66f6f; */
+  color: #060606;
+  
+}
+
+.member-profile-image:hover {
+  transform: scale(1.05);
+  /* box-shadow: 2px 2px 8px 2px #777; */
+  box-shadow: 0 0 5px rgb(233, 169, 169), 
+  0 0 25px rgb(233, 169, 169), 0 0 50px rgb(233, 169, 169), 
+  0 0 100px rgb(233, 169, 169), 0 0 200px rgb(233, 169, 169);
+  
+}
 

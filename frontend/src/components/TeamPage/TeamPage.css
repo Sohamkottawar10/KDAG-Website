@@ -10,3 +10,48 @@
 .members-head-list-bottom {
     margin-bottom: 5rem;
 }
+
+
+.show-more-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /*This sets the height of the container to the full viewport height */
+    align-items: center;
+  }
+  
+  .show-more-button {
+    background-color: #060606;
+    color: #fff;
+    padding: 8px 9px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 13px;
+    align-items: center;
+    /* margin: 0px, 200px; */
+    margin-left: 650px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width: 176px;
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* -webkit-mask-image: -webkit-radial-gradient(#000,#fff); */
+    /* -webkit-animation-fill-mode: 10px; */
+
+    /* transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0); */
+  }
+  
+  .show-more-button:hover {
+    color: #fff;
+    background-color: #da3737;
+    /* filter: grayscale(.4); */
+    /* color: #060606; */
+    transition: .3s;
+  }
+  
+
+ 
