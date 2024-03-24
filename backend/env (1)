@@ -1,0 +1,2 @@
+MONGO_URI="mongodb+srv://kdagiitkgp:CMsXT8A9vjKn-PD_@kdag.gc5ux28.mongodb.net/KDAG-BACKEND?retryWrites=true&w=majority&appName=KDAG"
+JWT_SECRET_KEY="db3i3r8ha-jfdg=SGKgdi_gq+IG"

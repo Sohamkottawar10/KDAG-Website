@@ -77,3 +77,31 @@ def get_replies(pid):
     except Exception as error:
         print(error)
         return jsonify({"message": "Error in getting the replies"}), 500
+    
+
+@reply_crud.route('/delete_reply/<string:pid>', methods=['DELETE'])
+@jwt_required()
+def delete_reply(pid):
+    try:
+        from app import mongo
+        data = request.get_json()
+        posts = mongo.db.posts
+        post = posts.find_one(ObjectId(pid))
+        if not post:
+            return jsonify({"message": "Not a valid post id"}), 401
+        if not 'level' in data:
+            return jsonify({"message": "Level field absent"}), 400
+        level_str = data['level']
+        org_post = post
+        if level_str == "":
+            return jsonify({"message": "Cannot delete root post"}), 400
+        else:
+            level_str = level_str.split('/')
+            for level in level_str[:-1]:
+                post = post['replies'][int(level)-1]
+            del post['replies'][int(level_str[-1])-1]
+        posts.replace_one({"_id": ObjectId(pid)}, org_post)
+        return jsonify({"message": "Reply deleted"}), 200
+    except Exception as error:
+        print(error)
+        return jsonify({"message": "Error in deleting reply"}), 500
